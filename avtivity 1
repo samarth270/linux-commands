@@ -1,0 +1,273 @@
+samarth kale@kali:~$ ls
+	Lists
+   	description: folder contents.
+    
+Desktop Documents Downloads Music Pictures Public Templates Videos
+		samarth kale@kali:~$ pwd
+  	description:  Shows current directory path.
+  	 /home/user
+		samarth kale@kali:~$ cd
+  	 description: Navigates directories.
+  	 (no output; changes directory silently)
+		samarth kale@kali:~$ mkdr
+  	 description: Creates directories.
+  	 (no output; creates folder successfully)
+		samarth kale@kali:~$ rmdir
+  	 description: 
+Deletes empty directories.
+  	 (no output; removes folder successfully)
+		samarth kale@kali:~$ rm
+  	 description: Deletes files or folders.
+  	 
+(no output; file deleted)
+		samarth kale@kali:~$ cp
+  	description:  Copies files or directories.
+  	 
+(no output; file copied)
+		samarth kale@kali:~$ mv
+  	 description: 
+Moves or renames files/directories.
+  	 
+(no output; file moved/renamed)
+		samarth kale@kali:~$ touch
+  	description:  Creates empty files.
+  	 (no output; file created)
+	samarth kale@kali:~$ 	file
+  	description: Determines file type.
+  	 test.txt: ASCII text
+  	samarth kale@kali:~$ zip and unzip
+  	description: Compresses/extracts ZIP archives.
+  	adding: file.txt (stored 0%)
+		samarth kale@kali:~$ tar
+description: 
+Archives files (with optional compression).
+(no output; archive created)
+	samarth kale@kali:~$ 	nano
+description: Text editors.
+(no output; opens editor interface)
+samarth kale@kali:~$ 	cat
+description: Prints or concatenates file contents.
+
+Hello, this is the file content.
+	samarth kale@kali:~$ 	grep
+description: Searches text using patterns.
+pattern found in line 3
+samarth kale@kali:~$ 		sed
+description: Stream editor for text manipulation.
+replaced text output
+	samarth kale@kali:~$ head
+description: Prints first few lines of a file.
+
+Line 1
+Line 2
+Line 3
+	samarth kale@kali:~$ 	tail
+description: Prints last few lines of a file.
+Line 8
+Line 9
+Line 10
+
+	samarth kale@kali:~$ awk
+description: 
+Processes and analyzes text files.
+	
+Average: 75
+	samarth kale@kali:~$ 	sort
+description: 	
+Sorts file contents.
+	
+apple
+banana
+cherry
+		samarth kale@kali:~$ cut
+description:     	
+Extracts sections from lines.
+    	field3,field4,field5
+		samarth kale@kali:~$ diff
+description:     	Compares files line by line.
+    	1c1
+< old line
+		new line
+		samarth kale@kali:~$ tee
+description:     	Outputs to Terminal and file.
+    	PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+	samarth kale@kali:~$ locate
+description:     	Finds files by name.
+    	/home/user/file.txt
+
+		samarth kale@kali:~$ find
+description:  Searches for files in a directory.
+
+ ./file.txt
+samarth kale@kali:~$ sudo
+
+description:  Executes commands with superuser privileges.
+
+ sudo password for user:
+samarth kale@kali:~$ 	su 
+description:  Switches users or shows current user.
+ user
+		samarth kale@kali:~$ chmod
+
+description:  Changes file permissions.
+
+ (no output; permissions changed)
+		samarth kale@kali:~$ chown
+
+description:  Changes file ownership.
+ (no output; ownership changed)
+		samarth kale@kali:~$ useradd
+description:  Manages users.
+ (no output; user added/changed/deleted)
+	samarth kale@kali:~$ 	df
+description:  Reports disk space usage.
+
+ Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/sda1      10000000  5000000   5000000  50% /
+
+	samarth kale@kali:~$ du
+	description: 
+Estimates file space usage.
+	
+4	./folder
+	samarth kale@kali:~$ 	top
+ 	description: Displays running processes.
+ 	
+PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+	samarth kale@kali:~$ 	htop
+  description:   	
+Interactive process viewer.
+    	
+(interactive interface; no static output)
+	samarth kale@kali:~$ ps
+  description:   	Reports process status.
+    	
+PID TTY          TIME CMD
+1234 pts/0    00:00:00 bash
+	samarth kale@kali:~$ 	uname
+  description:   	Prints system information.
+    	Linux
+		samarth kale@kali:~$ hostname
+   description:  	Shows or sets system hostname.
+    	
+ubuntu-host
+		samarth kale@kali:~$ time
+   description:  	Measures command execution time.
+    	real	0m0.001s
+user	0m0.000s
+sys	0m0.001s
+
+	samarth kale@kali:~$ systemctl
+	description: Manages system services.
+	UNIT                           LOAD   ACTIVE SUB       DESCRIPTION
+	samarth kale@kali:~$ 	watch
+ description: 	
+Runs a command periodically.
+ 	Every 2.0s: date
+Sun Aug 24 21:23:00 IST 2025
+	samarth kale@kali:~$ 	jobs
+    description: 	
+Lists active jobs.
+    	+  Running                 sleep 60 &
+samarth kale@kali:~$ 	kill
+description: 
+Terminates processes.
+
+(no output; process terminated)
+	samarth kale@kali:~$ shutdown
+description: Shuts down or restarts the system.
+Shutdown scheduled for Sun 2025-08-24 21:24:00 IST, use ‘shutdown -c’ to cancel.
+	samarth kale@kali:~$ 	ping
+description: Tests network connectivity.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=128 time=10 ms
+	
+	samarth kale@kali:~$ wget
+ description: Downloads files from the web.
+ –2025-08-24 21:32:00–  http://example.com/file
+Length: 1256 text/html
+Saving to: ‘file’
+samarth kale@kali:~$ 	curl
+
+ description: Transfers data with URLs.
+		samarth kale@kali:~$ scp
+
+description:  Securely copies files over SSH.
+
+ file.txt                                100%    0     0.0KB/s   00:00
+	samarth kale@kali:~$ rsync
+
+description:  Syncs files/directories.
+building file list …
+ done
+file.txt
+sent 100 bytes  received 20 bytes  240.00 bytes/sec
+total size is 0  speedup is 0.00
+	samarth kale@kali:~$ ip
+description:  Manages network interfaces.
+
+ 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+
+samarth kale@kali:~$ 	netstat
+description: Displays network connections.
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+		samarth kale@kali:~$ traceroute
+description:  Traces route to a network host.
+ traceroute to google.com (142.250.1.1), 30 hops max, 60 byte packets
+1  gateway (192.168.1.1)  1.000 ms  1.000 ms  1.000 ms
+		samarth kale@kali:~$ nslookup
+
+description:  Queries DNS. Server:		127.0.0.53
+Address:	127.0.0.53#53
+Non-authoritative answer:
+
+ Address: 93.184.216.34
+		samarth kale@kali:~$ dig
+
+description:  DNS lookup tool.
+;; ANSWER SECTION:
+example.com.	
+ 3600	IN	A	93.184.216.34
+		samarth kale@kali:~$ history
+
+description:  Shows command history.
+ 1  ls
+2  pwd
+		samarth kale@kali:~$ man
+
+description:  Displays manual pages.
+
+ LS(1)                        User Commands                       LS(1)
+NAME
+ls - list directory contents
+	samarth kale@kali:~$ echo
+
+description:  Prints text or variables.
+
+ Hello World
+		samarth kale@kali:~$ 	ln
+description:  Creates links between files.
+ (no output; link created)
+	samarth kale@kali:~$ 	alias 
+description:  Creates/removes command aliases.
+
+ alias k=‘kill’
+		samarth kale@kali:~$ cal
+
+description:  Displays calendar.
+
+ August 2025
+Su Mo Tu We Th Fr Sa
+1  2
+3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28 29 30
+31
+	samarth kale@kali:~$ 	apt 
+ description: Package managers.
+Reading package lists… Done
+Building dependency tree… Done
+Reading state information… Done
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
